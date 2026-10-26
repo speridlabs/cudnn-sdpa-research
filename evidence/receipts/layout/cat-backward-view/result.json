@@ -1,0 +1,26 @@
+{
+  "backing_numel": 262144,
+  "cat_width": 4,
+  "delivered_dO_is_view": true,
+  "delivered_dO_shape": [
+    2,
+    1,
+    256,
+    128
+  ],
+  "delivered_dO_storage_offset": 0,
+  "delivered_dO_strides": [
+    131072,
+    131072,
+    512,
+    1
+  ],
+  "note": "cat-backward delivered a gapped dO view in this small synthetic probe; this case does not cross 4 GiB. Large-span failure is tested separately.",
+  "o_shape": [
+    2,
+    1,
+    256,
+    128
+  ],
+  "poc": "E4-natural-trigger"
+}

@@ -1,0 +1,91 @@
+{
+  "cudnn": 92700,
+  "gpu": "NVIDIA H200 NVL",
+  "layout": {
+    "do_stride": [
+      2147467264,
+      128,
+      128,
+      1
+    ],
+    "dtype": "torch.bfloat16",
+    "effective_do_span_bytes": 4295000064,
+    "guard": false,
+    "guard_copied": false,
+    "original_do_stride": [
+      2147467264,
+      128,
+      128,
+      1
+    ],
+    "padding": 0.0,
+    "q_stride": [
+      32768,
+      128,
+      128,
+      1
+    ],
+    "shape_bhsd": [
+      2,
+      1,
+      256,
+      128
+    ],
+    "storage_bytes": 4295000064,
+    "storage_offset_elements": 0
+  },
+  "metrics": {
+    "dk": [
+      {
+        "finite": true,
+        "max_absolute": 0.002348252240105042,
+        "relative_l2": 0.002383115287705236
+      },
+      {
+        "finite": true,
+        "max_absolute": 0.09258588420466267,
+        "relative_l2": 0.10220683075072219
+      }
+    ],
+    "dq": [
+      {
+        "finite": true,
+        "max_absolute": 0.0024415003595678053,
+        "relative_l2": 0.0024089036148986502
+      },
+      {
+        "finite": true,
+        "max_absolute": 0.17536387375717288,
+        "relative_l2": 0.13047542592908537
+      }
+    ],
+    "dv": [
+      {
+        "finite": true,
+        "max_absolute": 0.001646183084664854,
+        "relative_l2": 0.002310198795161433
+      },
+      {
+        "finite": true,
+        "max_absolute": 0.0019221854120889392,
+        "relative_l2": 0.0023799732303789196
+      }
+    ],
+    "output": [
+      {
+        "finite": true,
+        "max_absolute": 0.0013031605086896714,
+        "relative_l2": 0.002197622573788177
+      },
+      {
+        "finite": true,
+        "max_absolute": 0.0014765954788731328,
+        "relative_l2": 0.002129475607933363
+      }
+    ]
+  },
+  "seed": 1487,
+  "status": "numerical_failure",
+  "threshold": 0.03,
+  "torch": "2.14.1+cu126"
+}

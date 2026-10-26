@@ -1,0 +1,85 @@
+{
+  "batch_stride_gapped_elements": 2147467264,
+  "below_batch_max_rel": 0.0,
+  "crossing_batch_max_rel": 0.12848227375646104,
+  "cudnn": 91002,
+  "gapped_layout": {
+    "do_stride": [
+      2147467264,
+      128,
+      128,
+      1
+    ],
+    "effective_do_span_bytes": 4295000064,
+    "packed": false
+  },
+  "gpu": "NVIDIA H200 NVL",
+  "note": "same-batch comparison; the only variable is the dO layout",
+  "packed_layout": {
+    "do_stride": [
+      32768,
+      128,
+      128,
+      1
+    ],
+    "effective_do_span_bytes": 131072,
+    "packed": true
+  },
+  "packed_sane": true,
+  "packed_vs_reference_sanity": {
+    "dk": [
+      {
+        "finite": true,
+        "max_absolute": 0.002348252240105042,
+        "relative_l2": 0.002383115287705236
+      },
+      {
+        "finite": true,
+        "max_absolute": 0.002267694700909928,
+        "relative_l2": 0.0023423168213918513
+      }
+    ],
+    "dq": [
+      {
+        "finite": true,
+        "max_absolute": 0.0024415003595678053,
+        "relative_l2": 0.0024089036148986502
+      },
+      {
+        "finite": true,
+        "max_absolute": 0.0016405465881410564,
+        "relative_l2": 0.0023324399360147375
+      }
+    ],
+    "dv": [
+      {
+        "finite": true,
+        "max_absolute": 0.001646183084664854,
+        "relative_l2": 0.002310198795161433
+      },
+      {
+        "finite": true,
+        "max_absolute": 0.0019221854120889392,
+        "relative_l2": 0.0023799732303789196
+      }
+    ]
+  },
+  "rel_l2_packed_vs_gapped_per_batch": {
+    "dk": [
+      0.0,
+      0.10111351266012968
+    ],
+    "dq": [
+      0.0,
+      0.12848227375646104
+    ],
+    "dv": [
+      0.0,
+      0.0
+    ]
+  },
+  "seed": 1487,
+  "status": "detector_confirms_corruption",
+  "threshold": 0.03,
+  "torch": "2.14.1+cu126"
+}

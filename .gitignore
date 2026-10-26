@@ -1,0 +1,13 @@
+# Local working notes are not part of the reviewable release candidate.
+.runbooks/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+# Video compositions and exports stay in local working copies.
+/media/video-source-x-v04/
+/media/video-source-x-v05/

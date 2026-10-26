@@ -1,0 +1,126 @@
+{
+  "as_strided_available": true,
+  "cases": {
+    "cat_trigger_receipt_scale": {
+      "cat_width": 4,
+      "metrics": {
+        "dk": [
+          {
+            "finite": true,
+            "relative_l2": 0.002112631219636478
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.0021000146545369137
+          }
+        ],
+        "dq": [
+          {
+            "finite": true,
+            "relative_l2": 0.0023394341715764918
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.0024038211480620067
+          }
+        ],
+        "dv": [
+          {
+            "finite": true,
+            "relative_l2": 0.0017377165228386563
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.0015761414897258797
+          }
+        ]
+      },
+      "passed": true
+    },
+    "gapped_4gib_crossing": {
+      "batch_stride_elements": 2147467264,
+      "crossing_batch_relative_l2": {
+        "dk": 0.002352337079020581,
+        "dq": 0.0023776431276547098,
+        "dv": 0.0023281381485206988
+      },
+      "metrics": {
+        "dk": [
+          {
+            "finite": true,
+            "relative_l2": 0.0023536851555876876
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.002352337079020581
+          }
+        ],
+        "dq": [
+          {
+            "finite": true,
+            "relative_l2": 0.002372101857426696
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.0023776431276547098
+          }
+        ],
+        "dv": [
+          {
+            "finite": true,
+            "relative_l2": 0.0023369393647860166
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.0023281381485206988
+          }
+        ]
+      },
+      "passed": true,
+      "span_bytes": 4295000064
+    },
+    "sanity_contiguous": {
+      "metrics": {
+        "dk": [
+          {
+            "finite": true,
+            "relative_l2": 0.0023536851555876876
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.002352337079020581
+          }
+        ],
+        "dq": [
+          {
+            "finite": true,
+            "relative_l2": 0.002372101857426696
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.0023776431276547098
+          }
+        ],
+        "dv": [
+          {
+            "finite": true,
+            "relative_l2": 0.0023369393647860166
+          },
+          {
+            "finite": true,
+            "relative_l2": 0.0023281381485206988
+          }
+        ]
+      },
+      "passed": true
+    }
+  },
+  "dtype": "bfloat16",
+  "framework": "paddlepaddle",
+  "gpu": "gpu:0",
+  "layout_convention": "paddle SDPA expects (B, S, H, D)",
+  "paddle_version": "3.3.1",
+  "status": "completed",
+  "threshold": 0.03,
+  "verdict": "paddle_sdpa_gradients_correct_under_gapped_do"
+}

@@ -1,0 +1,95 @@
+{
+  "description": "Selected native prepass metrics only. Model inputs, input hashes, binary identifiers, launch metadata and paths were removed.",
+  "records": [
+    {
+      "batch": 0,
+      "bitwise_equal_to_packed_control": null,
+      "experiment_id": "original",
+      "gpu": "NVIDIA H200",
+      "mismatch_count_vs_strict_fp64": 0,
+      "relative_l2_vs_fp64": 3.9987907576682855e-08,
+      "source_receipt": "native-prepass-capture-original-001.json",
+      "status": "numerical_failure",
+      "torch": "2.13.0+cu130"
+    },
+    {
+      "batch": 1,
+      "bitwise_equal_to_packed_control": null,
+      "experiment_id": "original",
+      "gpu": "NVIDIA H200",
+      "mismatch_count_vs_strict_fp64": 597997,
+      "relative_l2_vs_fp64": 0.5726383726202536,
+      "source_receipt": "native-prepass-capture-original-001.json",
+      "status": "numerical_failure",
+      "torch": "2.13.0+cu130"
+    },
+    {
+      "batch": 0,
+      "bitwise_equal_to_packed_control": true,
+      "experiment_id": "byte-intervention",
+      "gpu": "NVIDIA H200",
+      "mismatch_count_vs_strict_fp64": 0,
+      "relative_l2_vs_fp64": 3.9987907576682855e-08,
+      "source_receipt": "native-prepass-capture-fixed-002.json",
+      "status": "numerical_failure",
+      "torch": "2.13.0+cu130"
+    },
+    {
+      "batch": 1,
+      "bitwise_equal_to_packed_control": true,
+      "experiment_id": "byte-intervention",
+      "gpu": "NVIDIA H200",
+      "mismatch_count_vs_strict_fp64": 15,
+      "relative_l2_vs_fp64": 4.3537051104124094e-08,
+      "source_receipt": "native-prepass-capture-fixed-002.json",
+      "status": "numerical_failure",
+      "torch": "2.13.0+cu130"
+    },
+    {
+      "batch": 0,
+      "bitwise_equal_to_packed_control": null,
+      "experiment_id": "packed-control",
+      "gpu": "NVIDIA H200",
+      "mismatch_count_vs_strict_fp64": 0,
+      "relative_l2_vs_fp64": 3.9987907576682855e-08,
+      "source_receipt": "native-prepass-capture-packed-002.json",
+      "status": "numerical_failure",
+      "torch": "2.13.0+cu130"
+    },
+    {
+      "batch": 1,
+      "bitwise_equal_to_packed_control": null,
+      "experiment_id": "packed-control",
+      "gpu": "NVIDIA H200",
+      "mismatch_count_vs_strict_fp64": 15,
+      "relative_l2_vs_fp64": 4.3537051104124094e-08,
+      "source_receipt": "native-prepass-capture-packed-002.json",
+      "status": "numerical_failure",
+      "torch": "2.13.0+cu130"
+    },
+    {
+      "batch": 0,
+      "bitwise_equal_to_packed_control": null,
+      "experiment_id": "independent-u64-reference",
+      "gpu": "NVIDIA H200",
+      "mismatch_count_vs_strict_fp64": 0,
+      "relative_l2_vs_fp64": 2.5511407668921304e-08,
+      "source_receipt": "reference-u64-capture-001.json",
+      "status": "completed",
+      "torch": "2.13.0+cu130"
+    },
+    {
+      "batch": 1,
+      "bitwise_equal_to_packed_control": null,
+      "experiment_id": "independent-u64-reference",
+      "gpu": "NVIDIA H200",
+      "mismatch_count_vs_strict_fp64": 0,
+      "relative_l2_vs_fp64": 2.548877903537327e-08,
+      "source_receipt": "reference-u64-capture-001.json",
+      "status": "completed",
+      "torch": "2.13.0+cu130"
+    }
+  ],
+  "source_project": "cudnn-sdpa-backward-investigation",
+  "source_revision": "07d23257fd399d20d882a285d187dc7a162cba8b"
+}

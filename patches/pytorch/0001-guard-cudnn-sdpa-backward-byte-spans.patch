@@ -1,0 +1,225 @@
+diff --git a/aten/src/ATen/native/cudnn/MHA.cpp b/aten/src/ATen/native/cudnn/MHA.cpp
+index 4372382..7ac0ac3 100644
+--- a/aten/src/ATen/native/cudnn/MHA.cpp
++++ b/aten/src/ATen/native/cudnn/MHA.cpp
+@@ -170,6 +170,7 @@ void run_cudnn_SDP_bprop_nestedtensor(
+ #include <ATen/cuda/CUDAContext.h>
+ #include <ATen/cudnn/Handle.h>
+ #include <ATen/native/cudnn/MHA.h>
++#include <ATen/native/cudnn/SDPByteSpan.h>
+ #include <ATen/native/transformers/cuda/sdp_utils.h>
+ #include <ATen/native/transformers/sdp_utils.h>
+
+@@ -1998,34 +1999,41 @@ void run_cudnn_SDP_bprop(
+     _dropoutoffset = dropoutoffset.to(kLong);
+   }
+
++  Tensor o_ = o;
++  if (detail::cudnn_sdpa_needs_packing(o_, "output")) {
++    permute_to_matching_layout(o, o_);
++  }
+   Tensor dO_ = dO;
+ // cuDNN < 9.5.1 assumes gradOutput has same strides as Output
+ #if defined(CUDNN_VERSION) && CUDNN_VERSION < 90501
+-  if (!same_strides(o, dO)) {
++  if (!same_strides(o_, dO)) {
+     TORCH_WARN_ONCE(
+         "cuDNN SDPA backward got grad_output.strides() != output.strides(), "
+         "attempting to materialize a grad_output with matching strides."
+         "Consider upgrading cuDNN v9.5.1+ to avoid this warning.");
+-    permute_to_matching_layout(o, dO_);
++    permute_to_matching_layout(o_, dO_);
+   }
+   TORCH_INTERNAL_ASSERT(
+-      same_strides(o, dO_),
++      same_strides(o_, dO_),
+       "cuDNN SDPA expected grad_output.strides() == output.strides(), "
+       "the previous step probably failed to materialize a grad_output "
+       "with matching strides...");
+ #else
+   const auto innermost_dO_stride = dO.strides()[dO.strides().size() - 1];
+   if (innermost_dO_stride != 1 ||
+-      use_ragged_in_dense(q, k, v, o, attn_bias.has_value())) {
+-    permute_to_matching_layout(o, dO_);
++      use_ragged_in_dense(q, k, v, o_, attn_bias.has_value())) {
++    permute_to_matching_layout(o_, dO_);
+   }
+ #endif
+   // Autograd may pass a misaligned grad_output view (e.g. from cat backward).
+   if (!has_aligned_layout(dO_, /*allow_broadcast=*/true)) {
+-    dO_ = at::empty_like(o);
++    dO_ = at::empty_like(o_);
+     dO_.copy_(dO);
+   }
+-  if (use_ragged_in_dense(q, k, v, o, attn_bias.has_value())) {
++  if (detail::cudnn_sdpa_needs_packing(dO_, "grad_output")) {
++    permute_to_matching_layout(o_, dO_);
++  }
++  if (use_ragged_in_dense(q, k, v, o_, attn_bias.has_value())) {
+     seqlen_q = at::full({b, 1, 1, 1}, s_q, q.options().dtype(kInt));
+     seqlen_kv = at::full({b, 1, 1, 1}, s_kv, q.options().dtype(kInt));
+     auto cum_seqlen_q = at::full({b + 1, 1, 1, 1}, s_q, q.options().dtype(kInt))
+@@ -2038,7 +2046,7 @@ void run_cudnn_SDP_bprop(
+     rag_off_q = cum_seqlen_q.mul(q.stride(-2));
+     rag_off_k = cum_seqlen_kv.mul(k.stride(-2));
+     rag_off_v = cum_seqlen_kv.mul(v.stride(-2));
+-    rag_off_o = cum_seqlen_q.mul(o.stride(-2));
++    rag_off_o = cum_seqlen_q.mul(o_.stride(-2));
+     rag_off_lse = cum_seqlen_q.mul(softmaxstats.stride(-2));
+   }
+
+@@ -2054,7 +2062,7 @@ void run_cudnn_SDP_bprop(
+       k,
+       v,
+       attn_bias,
+-      o,
++      o_,
+       dO_,
+       softmaxstats,
+       dropout_probability,
+@@ -2078,7 +2086,7 @@ void run_cudnn_SDP_bprop(
+         k,
+         v,
+         attn_bias,
+-        o,
++        o_,
+         dO_,
+         softmaxstats,
+         dQ,
+@@ -2095,7 +2103,7 @@ void run_cudnn_SDP_bprop(
+       {Q, q.mutable_data_ptr()},
+       {K, k.mutable_data_ptr()},
+       {V, v.mutable_data_ptr()},
+-      {O, o.mutable_data_ptr()},
++      {O, o_.mutable_data_ptr()},
+       {DO, dO_.mutable_data_ptr()},
+       {LSE, softmaxstats.mutable_data_ptr()},
+       // outputs
+@@ -2110,7 +2118,7 @@ void run_cudnn_SDP_bprop(
+   if (attn_bias.has_value()) {
+     variant_pack[BIAS] = attn_bias.value().mutable_data_ptr();
+   }
+-  if (use_ragged_in_dense(q, k, v, o, attn_bias.has_value())) {
++  if (use_ragged_in_dense(q, k, v, o_, attn_bias.has_value())) {
+     variant_pack[SEQ_LEN_Q] = seqlen_q.mutable_data_ptr();
+     variant_pack[SEQ_LEN_KV] = seqlen_kv.mutable_data_ptr();
+     variant_pack[RAG_Q_OFF] = rag_off_q.mutable_data_ptr();
+diff --git a/aten/src/ATen/native/cudnn/SDPByteSpan.h b/aten/src/ATen/native/cudnn/SDPByteSpan.h
+new file mode 100644
+index 0000000..a0adbb5
+--- /dev/null
++++ b/aten/src/ATen/native/cudnn/SDPByteSpan.h
+@@ -0,0 +1,30 @@
++#pragma once
++
++#include <ATen/EmptyTensor.h>
++#include <ATen/core/Tensor.h>
++
++#include <cstdint>
++
++namespace at::native::detail {
++
++// Work around cuDNN backward kernels that scale O/dO offsets in 32 bits.
++// Remove once the fixed cuDNN version range is established; see #202035.
++inline bool cudnn_sdpa_needs_packing(const Tensor& tensor, const char* name) {
++  constexpr uint64_t max_byte_span = uint64_t{1} << 32;
++  // Offsets are relative to data_ptr(), not the start of the allocation.
++  const auto span = at::detail::computeStorageNbytes(
++      tensor.sizes(), tensor.strides(), tensor.element_size());
++  if (span <= max_byte_span) {
++    return false;
++  }
++  TORCH_CHECK(
++      at::detail::computeStorageNbytesContiguous(
++          tensor.sizes(), tensor.element_size()) <= max_byte_span,
++      "cuDNN SDPA backward cannot safely handle ",
++      name,
++      " with a compact byte span exceeding 4 GiB. Rerun the forward call "
++      "with a different backend selected by torch.nn.attention.sdpa_kernel().");
++  return true;
++}
++
++} // namespace at::native::detail
+diff --git a/aten/src/ATen/test/CMakeLists.txt b/aten/src/ATen/test/CMakeLists.txt
+index 5c46395..293e96f 100644
+--- a/aten/src/ATen/test/CMakeLists.txt
++++ b/aten/src/ATen/test/CMakeLists.txt
+@@ -17,6 +17,7 @@ list(APPEND ATen_CPU_TEST_SRCS
+   ${CMAKE_CURRENT_SOURCE_DIR}/cpu_generator_test.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/cpu_profiling_allocator_test.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/cpu_rng_test.cpp
++  ${CMAKE_CURRENT_SOURCE_DIR}/cudnn_sdp_utils_test.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/dlconvertor_test.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/extension_backend_test.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/functional_test.cpp
+diff --git a/aten/src/ATen/test/cudnn_sdp_utils_test.cpp b/aten/src/ATen/test/cudnn_sdp_utils_test.cpp
+new file mode 100644
+index 0000000..519da84
+--- /dev/null
++++ b/aten/src/ATen/test/cudnn_sdp_utils_test.cpp
+@@ -0,0 +1,30 @@
++#include <gtest/gtest.h>
++
++#include <ATen/ATen.h>
++#include <ATen/native/cudnn/SDPByteSpan.h>
++
++using namespace at;
++
++TEST(CudnnSDPABackward, ByteSpan) {
++  // Meta tensors exercise admission without allocating or dispatching large views.
++  const auto options = TensorOptions().device(kMeta).dtype(kHalf);
++  constexpr int64_t limit = int64_t{1} << 31;
++  const auto needs_packing = [](const Tensor& tensor) {
++    return at::native::detail::cudnn_sdpa_needs_packing(tensor, "test tensor");
++  };
++  EXPECT_FALSE(needs_packing(at::empty({0}, options)));
++  EXPECT_FALSE(needs_packing(at::empty_strided({1, 8}, {limit, 1}, options)));
++  EXPECT_FALSE(needs_packing(at::empty_strided({8, 8}, {0, 1}, options)));
++  EXPECT_FALSE(needs_packing(at::empty_strided({2, 8}, {limit - 16, 1}, options)));
++  EXPECT_FALSE(needs_packing(at::empty_strided({2, 8}, {limit - 8, 1}, options)));
++  EXPECT_TRUE(needs_packing(at::empty_strided({2, 8}, {limit, 1}, options)));
++  EXPECT_FALSE(needs_packing(at::empty({limit}, options)));
++  EXPECT_THROW(needs_packing(at::empty({limit + 1}, options)), c10::Error);
++
++  // A nonzero storage offset does not increase offsets relative to data_ptr().
++  auto offset_view = at::empty({limit + 8}, options).narrow(0, limit, 8);
++  EXPECT_FALSE(needs_packing(offset_view));
++  EXPECT_THROW(
++      needs_packing(at::empty_strided({2, limit}, {2 * limit, 1}, options)),
++      c10::Error);
++}
+diff --git a/test/test_transformers.py b/test/test_transformers.py
+index 7661167..8a86950 100644
+--- a/test/test_transformers.py
++++ b/test/test_transformers.py
+@@ -4771,6 +4771,30 @@ class TestSDPAAccelerator(NNTestCase):
+         torch.testing.assert_close(k.grad, k_cpu.grad.cuda(), atol=3e-3, rtol=2e-3)
+         torch.testing.assert_close(v.grad, v_cpu.grad.cuda(), atol=3e-3, rtol=2e-3)
+
++    @onlyCUDA
++    @unittest.skipIf(not PLATFORM_SUPPORTS_CUDNN_ATTENTION, "cuDNN attention is not supported")
++    @parametrize("dtype", [torch.float16, torch.bfloat16])
++    @parametrize("gapped_first", [False, True])
++    def test_cudnn_attention_backward_alternating_grad_layouts(self, device, dtype, gapped_first):
++        # Different physical layouts with identical logical values must agree,
++        # including when the execution-plan cache is warm.
++        shape = (2, 2, 32, 64)
++        inputs = tuple(torch.randn(shape, device=device, dtype=dtype, requires_grad=True) for _ in range(3))
++        packed = torch.randn(shape, device=device, dtype=dtype)
++        gapped = torch.empty((*shape[:-1], shape[-1] * 2), device=device, dtype=dtype)[..., :shape[-1]]
++        gapped.copy_(packed)
++        reference_inputs = tuple(t.detach().to("cpu", torch.float64).requires_grad_() for t in inputs)
++        with sdpa_kernel(SDPBackend.MATH):
++            reference = F.scaled_dot_product_attention(*reference_inputs)
++        reference_grads = torch.autograd.grad(reference, reference_inputs, packed.to("cpu", torch.float64))
++        layouts = (gapped, packed, gapped) if gapped_first else (packed, gapped, packed)
++        for grad_output in layouts:
++            with sdpa_kernel(SDPBackend.CUDNN_ATTENTION):
++                output = F.scaled_dot_product_attention(*inputs)
++                gradients = torch.autograd.grad(output, inputs, grad_output)
++            for actual, expected in zip(gradients, reference_grads):
++                self.assertEqual(actual.to("cpu", torch.float64), expected, atol=3e-3, rtol=2e-2)
++
+     @xfailIfNoAcceleratorTriton
+     @unittest.skipIf(not PLATFORM_SUPPORTS_CUDNN_ATTENTION, "cudnn Attention is not supported on this system")
+     def test_cudnn_attention_preserves_query_layout(self, device):

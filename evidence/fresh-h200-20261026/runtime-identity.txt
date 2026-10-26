@@ -1,0 +1,9 @@
+torch= 2.14.1+cu126
+cuda_build= 12.6
+cudnn_runtime_api= 91002
+cudnn_wheel= 9.10.2.21
+gpu= NVIDIA H200
+
+Loaded cuDNN shared-library paths (from /proc/self/maps):
+- /workspace/repro-venv/lib/python3.12/site-packages/nvidia/cudnn/lib/libcudnn.so.9
+- /workspace/repro-venv/lib/python3.12/site-packages/nvidia/cudnn/lib/libcudnn_graph.so.9

@@ -1,0 +1,13 @@
+{
+  "attention_custom_calls": [],
+  "backend": "gpu",
+  "cudnn_custom_calls": [],
+  "custom_call_count": 0,
+  "device": "cuda:0",
+  "finite_gradients": true,
+  "framework": "jax",
+  "jax_version": "0.12.0.1",
+  "note": "XLA compiles the whole cat+attention-backward into fused kernels; a gapped dO buffer like the ATen/TE case is not materialized in this execution model. The saved jaxpr is the primary evidence.",
+  "status": "completed",
+  "verdict": "no_attention_custom_call_detected"
+}

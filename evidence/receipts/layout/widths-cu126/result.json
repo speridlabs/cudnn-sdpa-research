@@ -1,0 +1,31 @@
+{
+  "cudnn": 91002,
+  "gpu": "NVIDIA H200 NVL",
+  "note": "same leaf-style proven-wrapping construction at realistic value scale; ratio>2 = corrupted; kernel_unavailable = this cuDNN build lacks the width on this GPU (recorded, not fatal)",
+  "poc": "E1-width-variants",
+  "results": {
+    "128": {
+      "packed": 2423.06,
+      "ratio": 10.098,
+      "span_bytes": 4295000064,
+      "stride_b": 2147467264,
+      "verdict": "wraps",
+      "wrapped": 24468.57
+    },
+    "256": {
+      "error": "No available kernel. Aborting execution.",
+      "span_bytes": 4295032832,
+      "status": "kernel_unavailable",
+      "stride_b": 2147450880
+    },
+    "64": {
+      "packed": 1140.91,
+      "ratio": 8.425,
+      "span_bytes": 4294983680,
+      "stride_b": 2147475456,
+      "verdict": "wraps",
+      "wrapped": 9612.29
+    }
+  },
+  "torch": "2.14.1+cu126"
+}

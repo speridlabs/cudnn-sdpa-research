@@ -1,0 +1,503 @@
+========= COMPUTE-SANITIZER
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (64,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84800
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (65,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84810
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (66,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84820
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (67,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84830
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (68,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84840
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (69,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84850
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (70,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84860
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (71,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84870
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (72,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84880
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (73,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84890
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (74,0,0) in block (8,0,0)
+=========     Address 0x70d98cc848a0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (75,0,0) in block (8,0,0)
+=========     Address 0x70d98cc848b0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (76,0,0) in block (8,0,0)
+=========     Address 0x70d98cc848c0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (77,0,0) in block (8,0,0)
+=========     Address 0x70d98cc848d0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (78,0,0) in block (8,0,0)
+=========     Address 0x70d98cc848e0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (79,0,0) in block (8,0,0)
+=========     Address 0x70d98cc848f0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (80,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84900
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (81,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84910
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (82,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84920
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (83,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84930
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (84,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84940
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (85,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84950
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (86,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84960
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (87,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84970
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (88,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84980
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (89,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84990
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (90,0,0) in block (8,0,0)
+=========     Address 0x70d98cc849a0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (91,0,0) in block (8,0,0)
+=========     Address 0x70d98cc849b0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (92,0,0) in block (8,0,0)
+=========     Address 0x70d98cc849c0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (93,0,0) in block (8,0,0)
+=========     Address 0x70d98cc849d0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (94,0,0) in block (8,0,0)
+=========     Address 0x70d98cc849e0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (95,0,0) in block (8,0,0)
+=========     Address 0x70d98cc849f0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (96,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a00
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (97,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a10
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (98,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a20
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (99,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a30
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (100,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a40
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (101,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a50
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (102,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a60
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (103,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a70
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (104,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a80
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (105,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84a90
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (106,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84aa0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (107,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84ab0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (108,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84ac0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (109,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84ad0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (110,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84ae0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (111,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84af0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (112,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b00
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (113,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b10
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (114,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b20
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (115,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b30
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (116,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b40
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (117,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b50
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (118,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b60
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (119,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b70
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (120,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b80
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (121,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84b90
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (122,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84ba0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (123,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84bb0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (124,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84bc0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (125,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84bd0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (126,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84be0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (127,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84bf0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (0,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84400
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (1,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84410
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (2,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84420
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (3,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84430
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (4,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84440
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (5,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84450
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (6,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84460
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (7,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84470
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (8,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84480
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (9,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84490
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (10,0,0) in block (8,0,0)
+=========     Address 0x70d98cc844a0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (11,0,0) in block (8,0,0)
+=========     Address 0x70d98cc844b0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (12,0,0) in block (8,0,0)
+=========     Address 0x70d98cc844c0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (13,0,0) in block (8,0,0)
+=========     Address 0x70d98cc844d0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (14,0,0) in block (8,0,0)
+=========     Address 0x70d98cc844e0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (15,0,0) in block (8,0,0)
+=========     Address 0x70d98cc844f0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (16,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84500
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (17,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84510
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (18,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84520
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (19,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84530
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (20,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84540
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (21,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84550
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (22,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84560
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (23,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84570
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (24,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84580
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (25,0,0) in block (8,0,0)
+=========     Address 0x70d98cc84590
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (26,0,0) in block (8,0,0)
+=========     Address 0x70d98cc845a0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (27,0,0) in block (8,0,0)
+=========     Address 0x70d98cc845b0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (28,0,0) in block (8,0,0)
+=========     Address 0x70d98cc845c0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (29,0,0) in block (8,0,0)
+=========     Address 0x70d98cc845d0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (30,0,0) in block (8,0,0)
+=========     Address 0x70d98cc845e0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (31,0,0) in block (8,0,0)
+=========     Address 0x70d98cc845f0
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (64,0,0) in block (12,0,0)
+=========     Address 0x70d98cc86800
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (65,0,0) in block (12,0,0)
+=========     Address 0x70d98cc86810
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (66,0,0) in block (12,0,0)
+=========     Address 0x70d98cc86820
+=========
+========= Uninitialized __global__ memory read of size 16 bytes
+=========     at void cudnn::fusion::compute_dot_do_o_specialized<(bool)1, (int)128>(const void *, const void *, void *, void *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, const void *, const void *, const void *, const void *, const void *, bool)+0x910
+=========     by thread (67,0,0) in block (12,0,0)
+=========     Address 0x70d98cc86830
+=========
+========= ERROR SUMMARY: 20480 errors
+========= ERROR SUMMARY: 20380 errors were not printed. Use --print-limit option to adjust the number of printed errors

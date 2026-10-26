@@ -1,0 +1,1165 @@
+{
+  "sources": [
+    {
+      "destination_path": "reproduction/run_reproducer.py",
+      "destination_sha256": "48a366aa34d2a8801a1f0b1478d804a33df50d61883cc7391e86aa7fcca8d375",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/run_reproducer.py",
+      "source_sha256": "48a366aa34d2a8801a1f0b1478d804a33df50d61883cc7391e86aa7fcca8d375",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "reproduction/b2_fixed.py",
+      "destination_sha256": "86ee1ce458c2a683e71e5b1ad8e31ea5b74428e271521a46f6a2ca8d6051be03",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/b2_fixed.py",
+      "source_sha256": "86ee1ce458c2a683e71e5b1ad8e31ea5b74428e271521a46f6a2ca8d6051be03",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "reproduction/synthetic_boundary.py",
+      "destination_sha256": "83051019d2a33bb2f5a54ab0f86e55c8169d04c741d9351d0cb6498209413cda",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/synthetic_boundary.py",
+      "source_sha256": "83051019d2a33bb2f5a54ab0f86e55c8169d04c741d9351d0cb6498209413cda",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "reproduction/SOURCE-PROVENANCE.md",
+      "destination_sha256": "c8b288002b18df80971bea65d13ced27a42953082a0aa0e40a61208edcb6dda2",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/SOURCE-PROVENANCE.md",
+      "source_sha256": "d0ebf0737b7b2100970517ea64dbd757b5ef6dc5ed94ce058c53e407fa57e79f",
+      "transformation": "copied from retained reproducer package; source-location wording generalized for publication"
+    },
+    {
+      "destination_path": "evidence/fresh-h200-20261026/collect_env.txt",
+      "destination_sha256": "3305aab8a66c6fa4d9bcb8a7ea6c287a3c03fbb3c75162bb3fb08615db902d60",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/run-h200-20261026/collect_env.txt",
+      "source_sha256": "fef8117c80f50ff6bc45dd24bd601081ca5ea83a537fba8c81c98e68ef9e1fe9",
+      "transformation": "byte-for-byte copy; trailing horizontal whitespace stripped without changing recorded values"
+    },
+    {
+      "destination_path": "evidence/fresh-h200-20261026/result.json",
+      "destination_sha256": "3d61c9013f803defcd5d0d99ed26907050ddb41d5b2a0f27c9f6488f5064afd5",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/run-h200-20261026/result.json",
+      "source_sha256": "5e6eab24a6b4ae5cb41be59c6d690e4fa2bbb50ec43614d0d98af29aa8f9b9b0",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/fresh-h200-20261026/runtime-identity.txt",
+      "destination_sha256": "e9e0e41689caa243ca871280d1a19c8800744d52a0e067438de57989b8d655d0",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/run-h200-20261026/runtime-identity.txt",
+      "source_sha256": "e9e0e41689caa243ca871280d1a19c8800744d52a0e067438de57989b8d655d0",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/core/below-boundary/result.json",
+      "destination_sha256": "6467136ee678a93eadd9bfe7c7e7133d67911ae57602a20c2711fc24b7f85351",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-below/result.json",
+      "source_sha256": "60d15bdbc31d9e614e95b5693a3c6b82e0cbfaabca86dccbb0600eb7229d1cb0",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/core/below-boundary/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-below/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/core/crossing-boundary/result.json",
+      "destination_sha256": "ea9267c7e42e5e594d9617a7046cb236a66e5714cbc34931c9f0da407c2280b8",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-crossing/result.json",
+      "source_sha256": "33fc5deba182849f9d11630bc31357c6efedf3f91c756acdf3ddebb160ba216d",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/core/crossing-boundary/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-crossing/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/core/dense-control/result.json",
+      "destination_sha256": "7c0c759c6b1a7a01a78a1f7f6751cc59ad067c9565a0501ce86f2a7a2c536167",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-dense/result.json",
+      "source_sha256": "bbfe70ec4b3854be2efa736d46d4671b816587374d6126d5efb0f7add8f4734f",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/core/dense-control/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-dense/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/core/packed-guard-control/result.json",
+      "destination_sha256": "d7d401e696513a50cd08c4bff627558d337df9a8a977fd7d31bbb11284a5453f",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-packed-guard/result.json",
+      "source_sha256": "d171abfed4e6131d816b8ab89c70448fd6da8f4e66fac683bd0e096dd91477e8",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/core/packed-guard-control/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-packed-guard/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-default/result.json",
+      "destination_sha256": "856332092f1a97d2d6d969064bedf8f5ec5962594d917e16f95d0ceea283a216",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-default/result.json",
+      "source_sha256": "0563e6cfa672d36572aa14073196732c4b9c196838b6dcccda3ce90990a5712b",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-default/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-default/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-cudnn/result.json",
+      "destination_sha256": "ab17f9c757d73b041906c78da7317f41732eb6c6f33ca6eeab740a4937c4b2bf",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-cudnn/result.json",
+      "source_sha256": "8caf187a6dd1c79898d9ac1abd5666b6d8fd6cedffc79b05094df0d4e3cc680b",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-cudnn/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-cudnn/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-flash/result.json",
+      "destination_sha256": "93bb547f4b9c308b1d330ea60fa03a6f1ff0934d01f58aeee106fe0412d42333",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-flash/result.json",
+      "source_sha256": "3006092d945d761056b9a293ccc22ea5fd14a8123bbc868faf2a17ce834f5537",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-flash/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-flash/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-math/result.json",
+      "destination_sha256": "316baa72a49c80e81b69a79e3f323a54d2c7b70c043a09b29dd3645b44f4aa6e",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-math/result.json",
+      "source_sha256": "23c3586e43580fd3da71a26b79d3eb50d1eea6591edcba497bbd97e4e4e46548",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-math/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-math/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-default/result.json",
+      "destination_sha256": "225d87eae5fcc2d59af364ced338710fb6a9902d86c57d75f330e686625a7bc9",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-backend-default/result.json",
+      "source_sha256": "4c1927f7a315381a1a227736fa0f092e55d386ad0bd46a57678dc749ac7cdfcf",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-default/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-backend-default/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-cudnn/result.json",
+      "destination_sha256": "db8846db2288e767846ee2a7b41ad5fb743d400b7eae2101b4fcc4cf4f4e86dc",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-backend-cudnn/result.json",
+      "source_sha256": "6042b39928599e609a9ac72f34f766ce507fbf3f4658cf23503ddea12167a2df",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-cudnn/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-backend-cudnn/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-flash/result.json",
+      "destination_sha256": "695b365fc0e1ac03a411e8fdbfaf8d16982fd568f17916aa68f6bda134c62fb7",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-backend-flash/result.json",
+      "source_sha256": "e70a2e094120861b4782d88414caf5c4c331f6b38859e2f350662bb429fd63b6",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-flash/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-backend-flash/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-math/result.json",
+      "destination_sha256": "6e33576cb7a4869e70b6f2db903ef9153df1d34c6c1da8ee15db66aab6d6ad15",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-backend-math/result.json",
+      "source_sha256": "eab6e81913d5353a19a0145c4938b2530597fe934dbc93d56b2c0fce6b837ee7",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-math/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-backend-math/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-crossing/result.json",
+      "destination_sha256": "50ead4edd5eb8b4af2835024ad714522e698f00c2e1dd2d62db893bae763f446",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-core-crossing/result.json",
+      "source_sha256": "9bfadfe127628e07fb64e4d9fb8cdee9393cebf4475097d10112d8cad4bca0e5",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-crossing/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-core-crossing/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-packed-guard/result.json",
+      "destination_sha256": "18d99f690563865dd99ce87c86cc7a32b478695ad93337a54001222f6c0072c5",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-core-packed-guard/result.json",
+      "source_sha256": "d766a8e8f8769fbca9f7a250d4bd9ec96bc5206d1a4e61f1a07dade8a49dd719",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu130-packed-guard/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-core-packed-guard/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.19.0.56/result.json",
+      "destination_sha256": "3b82febb330a566114cf28df03c5c2894f236b9f74c94da9293bf8e0fa68198f",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.19.0.56/result.json",
+      "source_sha256": "f937cef4dcd7dcb822d7b843d936887bd078b954848d90066f0b2d8f02d5f882",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.19.0.56/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.19.0.56/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.20.0.48/result.json",
+      "destination_sha256": "4c5dfd4f2e66ca04bb1fae8d6355581ed443d885f31dc5325770911c6cb2f869",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.20.0.48/result.json",
+      "source_sha256": "35bb09d70bc8aed55c879535f961d3437f45fadd10f0dbe1768b84339bed8a38",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.20.0.48/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.20.0.48/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.24.0.43/result.json",
+      "destination_sha256": "445570fae2a004adc1968988fc6bf6d017c87889e31cd7dc6d1e32ee5ce6bd64",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.24.0.43/result.json",
+      "source_sha256": "b638ea449366df9866aa2c250a274b1d21ffffdbba9070165cf3242d6c85e0e5",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.24.0.43/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.24.0.43/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.26.1.1/result.json",
+      "destination_sha256": "9d0cf7726dd6e87fda97c3b3907050022b33db1e8471f1ed32a8c784678180a3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.26.1.1/result.json",
+      "source_sha256": "9ccb431a5b51374ba0530a62622a8a5b7122098ddcd16bf30434cd813a0019e2",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.26.1.1/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.26.1.1/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.27.0.42/result.json",
+      "destination_sha256": "365631852fd2606a3af83386160c6cce58a3446e63d58fd17f042acea188d447",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.27.0.42/result.json",
+      "source_sha256": "3ab9abdfde849fa92e7b028a77e5181c4b01fec3d08fbfc2626beec9d57c404c",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.27.0.42/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.27.0.42/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/layout/widths-cu126/result.json",
+      "destination_sha256": "9e6d38f5516ad5e9ebd3db64b07072fba52f24059cbc73655c0e02ae48fa2ac4",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/width-variants/result.json",
+      "source_sha256": "8aa6022d390b6ff14be98bbd52da80cc299cfe7e7418fb54d4584ce0c78fb3ea",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/layout/widths-cu126/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/width-variants/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/layout/widths-cu130/result.json",
+      "destination_sha256": "d90a3a7bb94b2bf758b185a67bea28f5f86237ec6c375984e819fe8a0d6a94d1",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-width-variants/result.json",
+      "source_sha256": "a4e640b519c43f0483a9c7fdd9c257725138921ecda808d1233f4c784e3aecc3",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/layout/widths-cu130/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/cu130-width-variants/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/layout/cat-backward-view/result.json",
+      "destination_sha256": "98b46932d4d80d2d1efbba6cbddae04bb6894c8634c11463c5e272db98d9d2b8",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/natural-trigger/result.json",
+      "source_sha256": "40a1710b1bbe9700678cad61e45f86532b2916dc74da9fd657c0c3487e94329d",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed; replaced historical overbroad note with the bounded conclusion that this small case does not cross 4 GiB"
+    },
+    {
+      "destination_path": "evidence/receipts/layout/cat-backward-view/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/natural-trigger/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/layout/same-batch-detector/result.json",
+      "destination_sha256": "e1e2ec00337d3f48644d2795970de679b97549658da6ad602bc3c3a392ca5c9f",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/b2-fixed/result.json",
+      "source_sha256": "42888e8c2a8d54a8c9d0ed80d3c6969455c93940b52ae02e3fb7d3b069d17de7",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/layout/same-batch-detector/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/b2-fixed/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/frameworks/jax-probe/result.json",
+      "destination_sha256": "8febb7ac45647a336d537b8f47f8e953fb644a5867899307e4583d8f6f494c26",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/jax-probe/result.json",
+      "source_sha256": "9bf7badb1d901ff81fa6d453ae982bbf15f608425d61122a597c979b14e59b57",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/frameworks/jax-probe/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/jax-probe/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/frameworks/paddle-probe/result.json",
+      "destination_sha256": "d14134756a316406d09bb51ad2d9ce8d0ab02f02864eb162269c8d5f9622b54e",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/paddle-probe/result.json",
+      "source_sha256": "9b87f0ba109547bc3a2567e8d50b5d1db2530cf7dbf5a6275d5b005c02ba2e0c",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/frameworks/paddle-probe/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/paddle-probe/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/frameworks/transformer-engine-probe/result.json",
+      "destination_sha256": "20e3a25133ced8e177df68c05001caf25f264e433b65b99d36e9670cd5c96f3a",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/te-probe/result.json",
+      "source_sha256": "56c58f79b9d76187db7c8925b00471620324bcde5a11016efd7b856eba27fe73",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/frameworks/transformer-engine-probe/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/te-probe/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/memcheck-wrapped/result.json",
+      "destination_sha256": "ea9267c7e42e5e594d9617a7046cb236a66e5714cbc34931c9f0da407c2280b8",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-memcheck-wrapped/result.json",
+      "source_sha256": "65afbad5ff64ae7701092d3dcb0d029f7b569dbbe6c78fc0282f5974b7a87cb1",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/memcheck-wrapped/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-memcheck-wrapped/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/memcheck-control/result.json",
+      "destination_sha256": "440b2b585af6560f708a8337aaca797fd8f4cddd1f0f331cc1001ba999c23cae",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-memcheck-control/result.json",
+      "source_sha256": "09b6b354a16ecbad7fc229b1d713e474558e97b3ba9a628eabc3530044b4d34e",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/memcheck-control/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-memcheck-control/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/racecheck-wrapped/result.json",
+      "destination_sha256": "ea9267c7e42e5e594d9617a7046cb236a66e5714cbc34931c9f0da407c2280b8",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-racecheck-wrapped/result.json",
+      "source_sha256": "df13e3b46cbf27ba7bceae92662010ffe1d1c53d0593feba290998341fb76ec9",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/racecheck-wrapped/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-racecheck-wrapped/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/racecheck-control/result.json",
+      "destination_sha256": "440b2b585af6560f708a8337aaca797fd8f4cddd1f0f331cc1001ba999c23cae",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-racecheck-control/result.json",
+      "source_sha256": "29f88b6c3e2b9cdd39756a138d0ee015166ac9cb2a2a3fba3104117bbdbd40c3",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/racecheck-control/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-racecheck-control/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/initcheck-wrapped/result.json",
+      "destination_sha256": "ea9267c7e42e5e594d9617a7046cb236a66e5714cbc34931c9f0da407c2280b8",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-initcheck-wrapped/result.json",
+      "source_sha256": "89e8224930e7f3cd17f05207f8806b34efa871d18cb244756b4900094d5ff6d4",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/initcheck-wrapped/process-exit.txt",
+      "destination_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-initcheck-wrapped/exit.txt",
+      "source_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/initcheck-control/result.json",
+      "destination_sha256": "440b2b585af6560f708a8337aaca797fd8f4cddd1f0f331cc1001ba999c23cae",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-initcheck-control/result.json",
+      "source_sha256": "0818d2a4cb3e14114b38d40d84345a442682a61f02742a2e055df953b65318ee",
+      "transformation": "JSON parse and deterministic re-serialization; GPU pointer/address fields removed"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/initcheck-control/process-exit.txt",
+      "destination_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-initcheck-control/exit.txt",
+      "source_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/san-memcheck-wrapped.log",
+      "destination_sha256": "e4997030beeba60c3daafcdec4550e3274570f4ef4cc222409f66c31d39cca81",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-memcheck-wrapped/sanitizer.log",
+      "source_sha256": "e4997030beeba60c3daafcdec4550e3274570f4ef4cc222409f66c31d39cca81",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/san-memcheck-control.log",
+      "destination_sha256": "a9d061cee538182f762e132abeea7bac7bddb844338f25751bbbb043f242c425",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-memcheck-control/sanitizer.log",
+      "source_sha256": "a9d061cee538182f762e132abeea7bac7bddb844338f25751bbbb043f242c425",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/san-racecheck-wrapped.log",
+      "destination_sha256": "1b85f3dc026cf78a006497c3b74bcba86715bacff8d3c868cbb810a297066581",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-racecheck-wrapped/sanitizer.log",
+      "source_sha256": "1b85f3dc026cf78a006497c3b74bcba86715bacff8d3c868cbb810a297066581",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/san-racecheck-control.log",
+      "destination_sha256": "91dbb142f8feb8786cd6fde6ac035e816b67db14e4b7b400a01386ec106b75c4",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-racecheck-control/sanitizer.log",
+      "source_sha256": "91dbb142f8feb8786cd6fde6ac035e816b67db14e4b7b400a01386ec106b75c4",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/san-initcheck-wrapped.log",
+      "destination_sha256": "a7d97eb5809a7d46b76bc16118470b8c3b83b2e795f911d97f13d8c3fa7f7b56",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-initcheck-wrapped/sanitizer.log",
+      "source_sha256": "7f7cdf5a3490fba9fe5cdf950497ea4bde4949ffe11fcf4f8bb76395b3140b8a",
+      "transformation": "byte-for-byte copy; trailing horizontal whitespace stripped without changing recorded values"
+    },
+    {
+      "destination_path": "evidence/receipts/sanitizers/san-initcheck-control.log",
+      "destination_sha256": "dc3b8665e7b7c8f61e1ae952a42117e7c580a5ae6c2cf8afb26879607764560e",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/san-initcheck-control/sanitizer.log",
+      "source_sha256": "fd71af301a9a98f790a645dc8f40f7bb291d3d474fbe5b426978109fa28a88cf",
+      "transformation": "byte-for-byte copy; trailing horizontal whitespace stripped without changing recorded values"
+    },
+    {
+      "destination_path": "patches/pytorch/0001-guard-cudnn-sdpa-backward-byte-spans.patch",
+      "destination_sha256": "b0a833be0966a1efc998124e9bc931ff735736e3f316a68b0e970c7323d0afa8",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "git diff 7ebdeade70eae42be89d92448a7bafd1f3f1a614..a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_sha256": "b9c5e89e6c9d3d0d3c85f40d956807465890a2ed9b061a6701711c12d000f520",
+      "transformation": "Git patch generated from exact candidate commits; no checkout files modified; trailing horizontal whitespace stripped without changing recorded values"
+    },
+    {
+      "destination_path": "reproduction/poc_width_variants.py",
+      "destination_sha256": "12c85df3c50175ddfe0482f5da0b441d4a7d26b3c73cbc450cd9d0ae35960c65",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "poc/poc_width_variants.py",
+      "source_sha256": "12c85df3c50175ddfe0482f5da0b441d4a7d26b3c73cbc450cd9d0ae35960c65",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "reproduction/poc_natural_trigger.py",
+      "destination_sha256": "61c798c4513d382e705fbeadb52efaa0e95d773bdaa18aca4228a40a542b3856",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "poc/poc_natural_trigger.py",
+      "source_sha256": "5c92ce22f458dac486ef1a76d049d4efe79604a9a38a06342d0b63f67ddc8916",
+      "transformation": "module-docstring scope narrowed to the recorded evidence; clarified that this small synthetic view probe does not establish the exact production path or cross 4 GiB"
+    },
+    {
+      "destination_path": "reproduction/c6_default_backend_probe.py",
+      "destination_sha256": "16f12e2987e9e590bad002d8c5f8b92248bae0c655fc8742a3c82189d4f05352",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "poc/c6_default_backend_probe.py",
+      "source_sha256": "5d94974349946c0faa73b3d18a5c62343761a694840a1f42bbb0b7191541224d",
+      "transformation": "byte-for-byte copy; removed unused imports; no experiment logic changed"
+    },
+    {
+      "destination_path": "reproduction/framework_jax.py",
+      "destination_sha256": "4afa6b7f646f326f14ecfcfe9828b6e64e96d7b9f86dad81b4a4fbbe7d7a5c7c",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "poc/framework_jax.py",
+      "source_sha256": "4afa6b7f646f326f14ecfcfe9828b6e64e96d7b9f86dad81b4a4fbbe7d7a5c7c",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "destination_path": "reproduction/framework_paddle.py",
+      "destination_sha256": "57448699d56def1691deae33136b39aec4b0c48c07b598168085ca569d1c1e7e",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "poc/framework_paddle.py",
+      "source_sha256": "7558503745ed0645d8a342d4b87ac93702499a1fdf003f48322e9589f69cdf7a",
+      "transformation": "module-docstring scope narrowed to the recorded evidence"
+    },
+    {
+      "destination_path": "reproduction/framework_te.py",
+      "destination_sha256": "e28e8e3c02186018d48a59a1a0b71c93ff1d2305117c488e3d64929a206c1c03",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "poc/framework_te.py",
+      "source_sha256": "44655336c3617f9dab1f5b233df02e087f6ba45ad6d3fb91ced26a5a0ab241a3",
+      "transformation": "module-docstring scope narrowed to the recorded evidence; removed unused imports; no experiment logic changed"
+    },
+    {
+      "destination_path": "evidence/native/native-prepass-summary.json",
+      "destination_sha256": "604ad202c6a6fca91ca5c6f925b9df5685b383d34af18ecf248247fa798ebff3",
+      "project": "native-kernel-analysis",
+      "revision": "07d23257fd399d20d882a285d187dc7a162cba8b",
+      "source_path": "retained-native-captures/native-prepass-capture-original-001.json",
+      "source_sha256": "92e014f6d305f3704e8bfa25ed9922737226b50092e90c6f545ee482d44580e5",
+      "transformation": "selected per-batch error and mismatch metrics only; omitted input hashes, model tensors, captured binaries, paths and launch metadata"
+    },
+    {
+      "destination_path": "evidence/native/native-prepass-summary.json",
+      "destination_sha256": "604ad202c6a6fca91ca5c6f925b9df5685b383d34af18ecf248247fa798ebff3",
+      "project": "native-kernel-analysis",
+      "revision": "07d23257fd399d20d882a285d187dc7a162cba8b",
+      "source_path": "retained-native-captures/native-prepass-capture-fixed-002.json",
+      "source_sha256": "04f5b95436a56fa79692a332d742ba1fd2dccea6b551f3cd855f5df7cda52302",
+      "transformation": "selected per-batch error and mismatch metrics only; omitted input hashes, model tensors, captured binaries, paths and launch metadata"
+    },
+    {
+      "destination_path": "evidence/native/native-prepass-summary.json",
+      "destination_sha256": "604ad202c6a6fca91ca5c6f925b9df5685b383d34af18ecf248247fa798ebff3",
+      "project": "native-kernel-analysis",
+      "revision": "07d23257fd399d20d882a285d187dc7a162cba8b",
+      "source_path": "retained-native-captures/native-prepass-capture-packed-002.json",
+      "source_sha256": "e7f58b5ed535d7b5d0120503f12b723e85445b616ee13ddb8a53a6f376e30e53",
+      "transformation": "selected per-batch error and mismatch metrics only; omitted input hashes, model tensors, captured binaries, paths and launch metadata"
+    },
+    {
+      "destination_path": "evidence/native/native-prepass-summary.json",
+      "destination_sha256": "604ad202c6a6fca91ca5c6f925b9df5685b383d34af18ecf248247fa798ebff3",
+      "project": "native-kernel-analysis",
+      "revision": "07d23257fd399d20d882a285d187dc7a162cba8b",
+      "source_path": "retained-native-captures/reference-u64-capture-001.json",
+      "source_sha256": "922c261e7156bc4e7d3f3b412d13409459b54c665aa195732d2ae5e535c52595",
+      "transformation": "selected per-batch error and mismatch metrics only; omitted input hashes, model tensors, captured binaries, paths and launch metadata"
+    },
+    {
+      "destination_path": "evidence/receipts/core/below-boundary/environment.json",
+      "destination_sha256": "a4b795f5a247d751ada83e5d2cddfb104a21f6207eeab375777771eb261d20aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-below/env-sw.json",
+      "source_sha256": "3962dd0b7186053974cdb3532a6b4dc0e2ba584e723204dac1712adcd6e4b60c",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/below-boundary/environment.json",
+      "destination_sha256": "a4b795f5a247d751ada83e5d2cddfb104a21f6207eeab375777771eb261d20aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-below/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/below-boundary/environment.json",
+      "destination_sha256": "a4b795f5a247d751ada83e5d2cddfb104a21f6207eeab375777771eb261d20aa",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-below/timestamp.txt",
+      "source_sha256": "dc386b42712a2fe2c8a4cd6f7a448b7c3a8fbb72456220c86418463b2fffe471",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/crossing-boundary/environment.json",
+      "destination_sha256": "38452a6d8858acdcb883aff5018cf5f11ec3847ce9e282586d9d6ea1b9393e6e",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-crossing/env-sw.json",
+      "source_sha256": "3962dd0b7186053974cdb3532a6b4dc0e2ba584e723204dac1712adcd6e4b60c",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/crossing-boundary/environment.json",
+      "destination_sha256": "38452a6d8858acdcb883aff5018cf5f11ec3847ce9e282586d9d6ea1b9393e6e",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-crossing/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/crossing-boundary/environment.json",
+      "destination_sha256": "38452a6d8858acdcb883aff5018cf5f11ec3847ce9e282586d9d6ea1b9393e6e",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-crossing/timestamp.txt",
+      "source_sha256": "6c9312ee83240eb067cf94b2bb836fe37e657afcf81c24c6efc22de05191a639",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/dense-control/environment.json",
+      "destination_sha256": "a12edad64b1a1300f5b82cd433fab4188ed7fafb3d8d61e4e36916280528f215",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-dense/env-sw.json",
+      "source_sha256": "3962dd0b7186053974cdb3532a6b4dc0e2ba584e723204dac1712adcd6e4b60c",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/dense-control/environment.json",
+      "destination_sha256": "a12edad64b1a1300f5b82cd433fab4188ed7fafb3d8d61e4e36916280528f215",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-dense/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/dense-control/environment.json",
+      "destination_sha256": "a12edad64b1a1300f5b82cd433fab4188ed7fafb3d8d61e4e36916280528f215",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-dense/timestamp.txt",
+      "source_sha256": "28352bafd50cdcb536ae7907dc7b0549762f0641b2ca17a1786b0e0b1f9f48d2",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/packed-guard-control/environment.json",
+      "destination_sha256": "8039a5c8f9dd6802cbaeea840f358b28e6c9f5cc6fcb936acb9f753001e675c4",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-packed-guard/env-sw.json",
+      "source_sha256": "3962dd0b7186053974cdb3532a6b4dc0e2ba584e723204dac1712adcd6e4b60c",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/packed-guard-control/environment.json",
+      "destination_sha256": "8039a5c8f9dd6802cbaeea840f358b28e6c9f5cc6fcb936acb9f753001e675c4",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-packed-guard/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/core/packed-guard-control/environment.json",
+      "destination_sha256": "8039a5c8f9dd6802cbaeea840f358b28e6c9f5cc6fcb936acb9f753001e675c4",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/core-packed-guard/timestamp.txt",
+      "source_sha256": "33e98783b156f760b96206711fb078d6d410a1b02ab74aaafc36149f3b39ecff",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-default/environment.json",
+      "destination_sha256": "f6b95f46de055b20b13d77f35ff01131f67090308d598ea64537f7661fae1ea5",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-default/env-sw.json",
+      "source_sha256": "3962dd0b7186053974cdb3532a6b4dc0e2ba584e723204dac1712adcd6e4b60c",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-default/environment.json",
+      "destination_sha256": "f6b95f46de055b20b13d77f35ff01131f67090308d598ea64537f7661fae1ea5",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-default/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-default/environment.json",
+      "destination_sha256": "f6b95f46de055b20b13d77f35ff01131f67090308d598ea64537f7661fae1ea5",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-default/timestamp.txt",
+      "source_sha256": "2650139f13d8ed9030bd4d8df660ef244052ffc4af654a953a075e1bb4359418",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-cudnn/environment.json",
+      "destination_sha256": "543dc8cfdc919b4b2eedb8b6b285f71cb188104676d2753c7ad37e5462bf9475",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-cudnn/env-sw.json",
+      "source_sha256": "3962dd0b7186053974cdb3532a6b4dc0e2ba584e723204dac1712adcd6e4b60c",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-cudnn/environment.json",
+      "destination_sha256": "543dc8cfdc919b4b2eedb8b6b285f71cb188104676d2753c7ad37e5462bf9475",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-cudnn/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-cudnn/environment.json",
+      "destination_sha256": "543dc8cfdc919b4b2eedb8b6b285f71cb188104676d2753c7ad37e5462bf9475",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-cudnn/timestamp.txt",
+      "source_sha256": "be1ebd882e4260d5f1b0120c63e1caf3abff07978d760cef103dd32c7267dc66",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-flash/environment.json",
+      "destination_sha256": "0a7714fa7dd734697f5dabe978f76f9ee73ccf14702a7afc870dc96d34bc5e4b",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-flash/env-sw.json",
+      "source_sha256": "3962dd0b7186053974cdb3532a6b4dc0e2ba584e723204dac1712adcd6e4b60c",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-flash/environment.json",
+      "destination_sha256": "0a7714fa7dd734697f5dabe978f76f9ee73ccf14702a7afc870dc96d34bc5e4b",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-flash/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-flash/environment.json",
+      "destination_sha256": "0a7714fa7dd734697f5dabe978f76f9ee73ccf14702a7afc870dc96d34bc5e4b",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-flash/timestamp.txt",
+      "source_sha256": "5cf1b1fc844c684a4296aa3ee91ae9764fcf6840407152ef5c30933eb096f7fb",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-math/environment.json",
+      "destination_sha256": "4e31b71087b84f20a1a0849915201c4cec0ba038bf320f59cfc61391e0be6316",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-math/env-sw.json",
+      "source_sha256": "3962dd0b7186053974cdb3532a6b4dc0e2ba584e723204dac1712adcd6e4b60c",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-math/environment.json",
+      "destination_sha256": "4e31b71087b84f20a1a0849915201c4cec0ba038bf320f59cfc61391e0be6316",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-math/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/backend/cu126-math/environment.json",
+      "destination_sha256": "4e31b71087b84f20a1a0849915201c4cec0ba038bf320f59cfc61391e0be6316",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/backend-math/timestamp.txt",
+      "source_sha256": "1042ba9b2600065a0b25ae98d37f794cefb8e76de3038672af2729fa9cc8d83f",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.19.0.56/environment.json",
+      "destination_sha256": "5f3194d36f135a060b30fe30d23e0252299b4509bb6a98cf72a24b3cd2ff3e8d",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.19.0.56/env-sw.json",
+      "source_sha256": "e01fbe0512367a0f58a65103524618438cc93b39cddfa3376d916dcaf6589c6d",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.19.0.56/environment.json",
+      "destination_sha256": "5f3194d36f135a060b30fe30d23e0252299b4509bb6a98cf72a24b3cd2ff3e8d",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.19.0.56/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.19.0.56/environment.json",
+      "destination_sha256": "5f3194d36f135a060b30fe30d23e0252299b4509bb6a98cf72a24b3cd2ff3e8d",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.19.0.56/timestamp.txt",
+      "source_sha256": "f3f12f0a1856da7b6cee7736cc8521a5906a42fe94d9eb8aea2b10dcdf61ca48",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.20.0.48/environment.json",
+      "destination_sha256": "94042bdce71ef27c4985418e5357583dc469c051ecbd2752866ea37bc2e63157",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.20.0.48/env-sw.json",
+      "source_sha256": "f143095a952a93fda236e94d622f94041af2371e63de54ad43906d2657aeae24",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.20.0.48/environment.json",
+      "destination_sha256": "94042bdce71ef27c4985418e5357583dc469c051ecbd2752866ea37bc2e63157",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.20.0.48/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.20.0.48/environment.json",
+      "destination_sha256": "94042bdce71ef27c4985418e5357583dc469c051ecbd2752866ea37bc2e63157",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.20.0.48/timestamp.txt",
+      "source_sha256": "37e6ac70f656f6c271f01e5429f554a12a74c93a713a32cd52e5679ba34b0dfe",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.24.0.43/environment.json",
+      "destination_sha256": "9dcd7e6ac4b9dba8cee9f218ba5c244996af9d059427e7dfbc7ef7970454d3a9",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.24.0.43/env-sw.json",
+      "source_sha256": "8999fa76d804481fb9e8aff3bebde8a38a4744b9a02d2c98cb193984e3778bcc",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.24.0.43/environment.json",
+      "destination_sha256": "9dcd7e6ac4b9dba8cee9f218ba5c244996af9d059427e7dfbc7ef7970454d3a9",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.24.0.43/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.24.0.43/environment.json",
+      "destination_sha256": "9dcd7e6ac4b9dba8cee9f218ba5c244996af9d059427e7dfbc7ef7970454d3a9",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.24.0.43/timestamp.txt",
+      "source_sha256": "66b454d0036e05a69d648fecf2973060695d5372540afe1d122cf12cff0a33e2",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.26.1.1/environment.json",
+      "destination_sha256": "8834dd42eebaa5b061cfc136a66f43496c66217884ce3e60094429b883259714",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.26.1.1/env-sw.json",
+      "source_sha256": "9154541226ddf58f4a248ee34f1cc39b51efef16eb07d4142e55d1bf28e5b60a",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.26.1.1/environment.json",
+      "destination_sha256": "8834dd42eebaa5b061cfc136a66f43496c66217884ce3e60094429b883259714",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.26.1.1/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.26.1.1/environment.json",
+      "destination_sha256": "8834dd42eebaa5b061cfc136a66f43496c66217884ce3e60094429b883259714",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.26.1.1/timestamp.txt",
+      "source_sha256": "6963e80fb60457b7fa8d4f8b98ca99682df7096a3110ace4b8ee3ab5ee847b28",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.27.0.42/environment.json",
+      "destination_sha256": "86f5107023ebb21a1631f704d8eb94ccf3a99d53c13db4f3bfaaf99a65248669",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.27.0.42/env-sw.json",
+      "source_sha256": "7a97fdd4df7d6de3642c9fd4e663d03fe89a5e8eafeeeae1638fc535272a0e86",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.27.0.42/environment.json",
+      "destination_sha256": "86f5107023ebb21a1631f704d8eb94ccf3a99d53c13db4f3bfaaf99a65248669",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.27.0.42/env-gpu.txt",
+      "source_sha256": "ee7a184fb86d37fa594d3b8b76789b260b95f6e387d41b7a82d43e2ccfb80152",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/receipts/versions/cu126-9.27.0.42/environment.json",
+      "destination_sha256": "86f5107023ebb21a1631f704d8eb94ccf3a99d53c13db4f3bfaaf99a65248669",
+      "project": "receipt-reconciliation",
+      "revision": "9496345f91397fa3722b08b320187dc60542f4ab",
+      "source_path": "results/version-9.27.0.42/timestamp.txt",
+      "source_sha256": "570a641bbb66aa26aa034314f97cf52eab0ec19413f7c688210dba492ec9d7f0",
+      "transformation": "selected software/GPU model/driver/memory/capability/time fields; omitted device UUID, host and unneeded system details"
+    },
+    {
+      "destination_path": "evidence/fresh-h200-20261026/environment.json",
+      "destination_sha256": "8585830012097d23df3bd4b1a6237bc8f2a1b44c67194f55413a20e8b7f9046d",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/run-h200-20261026/collect_env.txt",
+      "source_sha256": "fef8117c80f50ff6bc45dd24bd601081ca5ea83a537fba8c81c98e68ef9e1fe9",
+      "transformation": "normalized CUDA/cuDNN/GPU/driver identity only; host topology and package inventory omitted"
+    },
+    {
+      "destination_path": "evidence/fresh-h200-20261026/environment.json",
+      "destination_sha256": "8585830012097d23df3bd4b1a6237bc8f2a1b44c67194f55413a20e8b7f9046d",
+      "project": "framework-mitigation",
+      "revision": "a9675ccd04e279151116f724134fe64e13fd4a5f",
+      "source_path": "retained-reproducer-package/run-h200-20261026/runtime-identity.txt",
+      "source_sha256": "e9e0e41689caa243ca871280d1a19c8800744d52a0e067438de57989b8d655d0",
+      "transformation": "normalized CUDA/cuDNN/GPU/driver identity only; host topology and package inventory omitted"
+    }
+  ]
+}

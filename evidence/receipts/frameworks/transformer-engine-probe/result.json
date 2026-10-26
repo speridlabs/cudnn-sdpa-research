@@ -1,0 +1,89 @@
+{
+  "backend": "not exposed by this TE version; see run log for NVTE debug lines",
+  "batch_stride": 2147450880,
+  "cudnn": 92400,
+  "framework": "transformer_engine",
+  "gapped_4gib_crossing": {
+    "metrics": {
+      "dk": [
+        {
+          "finite": true,
+          "relative_l2": 0.002358666348235284
+        },
+        {
+          "finite": true,
+          "relative_l2": 0.0023694692968324487
+        }
+      ],
+      "dq": [
+        {
+          "finite": true,
+          "relative_l2": 0.0023806702397698304
+        },
+        {
+          "finite": true,
+          "relative_l2": 0.0023783111419554692
+        }
+      ],
+      "dv": [
+        {
+          "finite": true,
+          "relative_l2": 0.002320442041995963
+        },
+        {
+          "finite": true,
+          "relative_l2": 0.002357258741568747
+        }
+      ]
+    },
+    "passed": true
+  },
+  "gpu": "NVIDIA H200 NVL",
+  "head_dim_folded": true,
+  "output_shape": [
+    2,
+    256,
+    256
+  ],
+  "sanity_contiguous": {
+    "metrics": {
+      "dk": [
+        {
+          "finite": true,
+          "relative_l2": 0.002358666348235284
+        },
+        {
+          "finite": true,
+          "relative_l2": 0.0023694692968324487
+        }
+      ],
+      "dq": [
+        {
+          "finite": true,
+          "relative_l2": 0.0023806702397698304
+        },
+        {
+          "finite": true,
+          "relative_l2": 0.0023783111419554692
+        }
+      ],
+      "dv": [
+        {
+          "finite": true,
+          "relative_l2": 0.002320442041995963
+        },
+        {
+          "finite": true,
+          "relative_l2": 0.002357258741568747
+        }
+      ]
+    },
+    "passed": true
+  },
+  "span_bytes": 4295032832,
+  "status": "completed",
+  "te_version": "2.20.2",
+  "threshold": 0.03,
+  "torch": "2.14.1+cu130",
+  "verdict": "te_gradients_correct_under_gapped_do"
+}

@@ -1,0 +1,7 @@
+experiment_id,head_width,verdict,norm_ratio,reachable_span_bytes,torch,cudnn_runtime,gpu
+evidence/receipts/layout/widths-cu126,128,wraps,10.098,4295000064,2.14.1+cu126,91002,NVIDIA H200 NVL
+evidence/receipts/layout/widths-cu126,256,kernel_unavailable,,4295032832,2.14.1+cu126,91002,NVIDIA H200 NVL
+evidence/receipts/layout/widths-cu126,64,wraps,8.425,4294983680,2.14.1+cu126,91002,NVIDIA H200 NVL
+evidence/receipts/layout/widths-cu130,128,wraps,10.098,4295000064,2.14.1+cu130,92400,NVIDIA H200 NVL
+evidence/receipts/layout/widths-cu130,256,wraps,20.686,4295032832,2.14.1+cu130,92400,NVIDIA H200 NVL
+evidence/receipts/layout/widths-cu130,64,wraps,8.424,4294983680,2.14.1+cu130,92400,NVIDIA H200 NVL

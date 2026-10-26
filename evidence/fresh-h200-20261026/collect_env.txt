@@ -1,0 +1,94 @@
+Collecting environment information...
+PyTorch version: 2.14.1+cu126
+Is debug build: False
+CUDA used to build PyTorch: 12.6
+ROCM used to build PyTorch: N/A
+
+OS: Ubuntu 24.04.3 LTS (x86_64)
+GCC version: (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Clang version: Could not collect
+CMake version: version 3.28.3
+Libc version: glibc-2.39
+
+Python version: 3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0] (64-bit runtime)
+Python platform: Linux-6.8.0-138-generic-x86_64-with-glibc2.39
+Is CUDA available: True
+CUDA runtime version: Could not collect
+CUDA_MODULE_LOADING set to:
+GPU models and configuration: GPU 0: NVIDIA H200
+Nvidia driver version: 595.91.07
+cuDNN version: Probably one of the following:
+/usr/lib/x86_64-linux-gnu/libcudnn.so.9.8.0
+/usr/lib/x86_64-linux-gnu/libcudnn_adv.so.9.8.0
+/usr/lib/x86_64-linux-gnu/libcudnn_cnn.so.9.8.0
+/usr/lib/x86_64-linux-gnu/libcudnn_engines_precompiled.so.9.8.0
+/usr/lib/x86_64-linux-gnu/libcudnn_engines_runtime_compiled.so.9.8.0
+/usr/lib/x86_64-linux-gnu/libcudnn_graph.so.9.8.0
+/usr/lib/x86_64-linux-gnu/libcudnn_heuristic.so.9.8.0
+/usr/lib/x86_64-linux-gnu/libcudnn_ops.so.9.8.0
+Is XPU available: False
+HIP runtime version: N/A
+MIOpen runtime version: N/A
+Is XNNPACK available: False
+Caching allocator config: N/A
+
+CPU:
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 57 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  192
+On-line CPU(s) list:                     0-191
+Vendor ID:                               GenuineIntel
+Model name:                              INTEL(R) XEON(R) PLATINUM 8568Y+
+CPU family:                              6
+Model:                                   207
+Thread(s) per core:                      2
+Core(s) per socket:                      48
+Socket(s):                               2
+Stepping:                                2
+BogoMIPS:                                4600.00
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect user_shstk avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hfi vnmi avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr ibt amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities ibpb_exit_to_user
+Virtualization:                          VT-x
+L1d cache:                               4.5 MiB (96 instances)
+L1i cache:                               3 MiB (96 instances)
+L2 cache:                                192 MiB (96 instances)
+L3 cache:                                600 MiB (2 instances)
+NUMA node(s):                            2
+NUMA node0 CPU(s):                       0-47,96-143
+NUMA node1 CPU(s):                       48-95,144-191
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+
+Versions of relevant libraries:
+[pip3] nvidia-cublas-cu12==12.6.4.1
+[pip3] nvidia-cuda-cupti-cu12==12.6.80
+[pip3] nvidia-cuda-nvrtc-cu12==12.6.85
+[pip3] nvidia-cuda-runtime-cu12==12.6.77
+[pip3] nvidia-cudnn-cu12==9.10.2.21
+[pip3] nvidia-cufft-cu12==11.3.0.4
+[pip3] nvidia-curand-cu12==10.3.7.77
+[pip3] nvidia-cusolver-cu12==11.7.1.2
+[pip3] nvidia-cusparse-cu12==12.5.4.2
+[pip3] nvidia-cusparselt-cu12==0.7.1
+[pip3] nvidia-nccl-cu12==2.29.3
+[pip3] nvidia-nvjitlink-cu12==12.9.86
+[pip3] nvidia-nvtx-cu12==12.6.77
+[pip3] torch==2.14.1+cu126
+[pip3] triton==3.8.0
+[conda] Could not collect
